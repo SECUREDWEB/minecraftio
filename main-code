@@ -1,0 +1,130 @@
+
+<!DOCTYPE html><html lang="en"><head><title>Bloxd.io Game Files - Crazy Games</title><link href="https://gameframe.crazygames.com/crazygames-gameframe-v1.bundle.js" rel="preload" as="script" /><link href="https://www.crazygames.com/game/bloxdhop-io" rel="canonical" /><meta charset="UTF-8" /><meta name="description" content="The game files for Bloxd.io, a free browser game on CrazyGames.com" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="Accept-CH" content="DPR" /><meta name="viewport" content="width=device-width, maximum-scale=1.0, initial-scale=1.0, user-scalable=no, minimal-ui" /><style id="pacman-styles">/* background */
+body {
+  background-image: linear-gradient(290deg, #3b2b73 55%, #6f2f93, #6f2f93);
+  background-position: center;
+  text-align: center;
+} 
+/* for positioning of pacman loader */
+body, html { height: 100%; }
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+@keyframes rotate_preloadpacman_half_up {
+  0% {
+    transform: rotate(270deg); }
+  50% {
+    transform: rotate(360deg); }
+  100% {
+    transform: rotate(270deg); }
+}
+
+@keyframes rotate_preloadpacman_half_down {
+  0% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes preloadpacman-balls {
+  75% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translate(-100px, -6.25px);
+  }
+}
+
+.preloadpacman {
+  position: relative;
+}
+.preloadpacman > div:nth-child(2) {
+  animation: preloadpacman-balls 1s -0.99s infinite linear;
+}
+.preloadpacman > div:nth-child(3) {
+  animation: preloadpacman-balls 1s -0.66s infinite linear;
+}
+.preloadpacman > div:nth-child(4) {
+  animation: preloadpacman-balls 1s -0.33s infinite linear;
+}
+.preloadpacman > div:nth-child(5) {
+  animation: preloadpacman-balls 1s 0s infinite linear;
+}
+.preloadpacman > div:first-of-type {
+  width: 0px;
+  height: 0px;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #fff;
+  border-left: 25px solid #fff;
+  border-bottom: 25px solid #fff;
+  border-radius: 25px;
+  animation: rotate_preloadpacman_half_up 0.5s 0s infinite;
+  position: relative;
+  left: -30px;
+}
+.preloadpacman > div:nth-child(2) {
+  width: 0px;
+  height: 0px;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #fff;
+  border-left: 25px solid #fff;
+  border-bottom: 25px solid #fff;
+  border-radius: 25px;
+  animation: rotate_preloadpacman_half_down 0.5s 0s infinite;
+  margin-top: -50px;
+  position: relative;
+  left: -30px;
+}
+.preloadpacman > div:nth-child(3),
+.preloadpacman > div:nth-child(4),
+.preloadpacman > div:nth-child(5),
+.preloadpacman > div:nth-child(6) {
+  background-color: #fff;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  margin: 2px;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  transform: translate(0, -6.25px);
+  top: 25px;
+  left: 70px;
+}
+</style></head><body><div class="preloadpacman" id="pacman"><div></div><div></div><div></div><div></div><div></div></div><script type="text/javascript">function loadScript(url, callback) {
+  var head = document.head;
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src = url;
+  script.async = true;
+  script.onreadystatechange = callback;
+  script.onload = callback;
+  head.appendChild(script);
+}
+var options = {"loader":"iframe","loaderOptions":{"url":"https://bloxd.io/"},"author":"Arthur","thumbnail":"https://images.crazygames.com/games/bloxdhop-io/cover-1671463581901.png?auto=format,compress&q=75&cs=strip&w=360","gameName":"Minecraft.io (Bloxd.io)","gameHttps":true,"gameSlug":"bloxdhop-io","gameId":"18993","gameStatus":"published","showAdOnExternal":"NEVER","showAdOnInternal":"DEFAULT","disableEmbedding":false,"dollarRate":0.9435502209322841,"upvotes":286851,"downvotes":48690,"releaseDate":"2021-03-30","locale":"en_US","controls":{"text":"<h3>Controls</h3>\n<ul>\n    <li>WASD to move</li>\n    <li>Shift or double-tap W to run</li>\n    <li>C, Z, \\, or Caps Lock to crouch</li>\n    <li>T or Enter to chat</li>\n    <li>B to open shop</li>\n    <li>/ to start command</li>\n</ul>\n<h3>DoodleCube Controls</h3>\n<ul>\n    <li>Place blocks: right mouse button</li>\n    <li>Destroy placed blocks: left mouse button</li>\n    <li>Switch blocks: number keys or mouse middle button</li>\n</ul>\n<h3>Commands</h3>\n<ul>\n    <li>/rtv - not a fan of this map? Vote to skip it!</li>\n    <li>/players - see the current players in your lobby</li>\n    <li>/xp - See your level and XP</li>\n    <li>/played - See how much time you&#39;ve spent having tons of fun</li>\n    <li>/nobuffs - Play through the maps without any buffs to place on a separate leaderboard!</li>\n</ul>"},"videoThumbnail":"https://videos.crazygames.com/bloxdhop-io/3/bloxdhop-io-thumbnail.mp4","video":{"original":"https://videos.crazygames.com/bloxdhop-io/3/bloxdhop-io.mp4","sizes":[{"width":205,"height":115,"location":"https://videos.crazygames.com/bloxdhop-io/3/bloxdhop-io-205x115.mp4"},{"width":249,"height":140,"location":"https://videos.crazygames.com/bloxdhop-io/3/bloxdhop-io-249x140.mp4"},{"width":364,"height":208,"location":"https://videos.crazygames.com/bloxdhop-io/3/bloxdhop-io-364x208.mp4"},{"width":494,"height":276,"location":"https://videos.crazygames.com/bloxdhop-io/3/bloxdhop-io-494x276.mp4"},{"width":611,"height":343,"location":"https://videos.crazygames.com/bloxdhop-io/3/bloxdhop-io-611x343.mp4"}]},"sandbox":true,"minTimeBetweenMidrollAdsInMs":180000,"minTimeBetweenRewardedAdsInMs":5000,"noMidrollAdInFirstMinutes":3,"noRewardedAdInFirstMinutes":0,"categoryEnSlug":"io","tagsEnSlugs":["sandbox","parkour","minecraft","avoid","jumping","third-person-shooter","build","multiplayer","upgrade","html5","block"],"isKids":false,"hasMidroll":true,"hasRewarded":true,"fullscreen":"ADDS_VALUE","orientation":"LANDSCAPE","category":"Minecraft","categoryLink":"https://www.crazygames.com/t/minecraft","gameLink":"https://www.crazygames.com/game/bloxdhop-io","alternativeGames":[],"domainHasNoCMP":false};
+var SDK_READY = false;
+var GF_READY = false;
+var GF_LOAD_CALLED = false;
+loadScript("https://gameframe.crazygames.com/crazygames-gameframe-v1.bundle.js", function() {
+    Crazygames.load(options).then(function() {
+      var pacmanWrapper = document.getElementById('pacman');
+      var pacmanStyles = document.getElementById('pacman-styles');
+
+      if (pacmanWrapper && pacmanStyles) {
+        pacmanWrapper.remove();
+        pacmanStyles.remove();
+      }
+    });
+});</script></body></html>
+
+
+<div class="floating" id="moreg" style="position:fixed; top: 30%; left: 0px; z-index: 10"><a href="https://sites.google.com/view/securedweb" target="_blank" title="Play More"><img alt="Back To Home" height="30" src="https://cdn.jsdelivr.net/gh/h3sj7v2f6k/pic@7a4835476c79b32ec1c5ac4a3cda66ea81b63371/play.png" style="cursor:pointer;" width="30"></a></div></body>
